@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="shortcut icon" href="sailormoon.jpg.png">
+    <meta charset="utf-8">
+    <title>Isabella Carry-McDonald</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnis.cloudfare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+  </head>
+  <body>
+    <div class="top-container">
+        <div class="menu">
+          <div><ul class="nav">
+            <li class="links"><a href="index.html">Home</a></li>
+            <li class="links"><a href="contactUS.html">Contact Info</a></li>
+            <li class="links"><a href="MyWorks.html">My Work</a></li>
+            <li class="links"><a href=works4sale.html>For Sale</a></li>
+            <li class="links"><a href="NewsandUpdates.html">News and Updates</a></li>
+          </ul></div>
+        </div>
+      </div>
+    <h1 class="a">Isabella Carry McDonald</h1>
+    <h4 class="b">-Fashion</h4>
+    <h4 class="c">-Photograpghy</h4>
+    <h4 class="d">-Videography</h4>
+    <h4 class="e">-Tatoos</h4>
+    <p class="story">Fashion student at Parsons School of Art and Design, the New School. In my junior year and based out of Queens.
+      I work on clothes a lot for school but love to do tatoos and film photography as well. Getting ready to work on my thesis for senior year, will share new and current works to this website!</p>
+    <!-- This div container holds all of the slideshow code -->
+    <div class="slideshow-container">
+      <!-- Each image gets its own div container -->
+      <div class="mySlides fade">
+        <img class="nene" src="nene.jpg.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="outfit" src="outfit.jpg.png" style="width:50%">
+        <div class="text"></div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="boots" src="boots.jpg.png" style="width:50%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="comf" src="comfiter.jpg.png" style="width:50%">
+        <div class="text">Caption Three</div>
+      </div>
+
+    </div>
+
+    <!-- This javascript makes the slideshow move -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      // Determines how many images are going to be in the slideshow
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        // Rotates through the images and loops back to the first one
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+      </script>
+
+
+  </body>
+</html>
